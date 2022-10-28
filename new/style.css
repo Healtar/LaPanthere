@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -707,13 +707,22 @@ p {
 h2 {
     font-size: 22px;
     line-height: 1.4em;
-}
+    text-align: center;
 
+}
+.section-title{
+    padding: 0 150px;
+    font-size: 22px;
+}
 h3 {
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
+}
+
+.logo{
+    width: 100px;
 }
 
 .med-width-whitespace {
@@ -734,7 +743,21 @@ h4 {
     margin-bottom: 14px;
     margin-top: 24px;
 }
+blockquote p{
+    font-size: 20px;
+    font-style: italic;
+}
+blockquote{
+    border: none;
+    margin: 0;
+}
+figcaption{
+    font-size: 20px;
 
+}
+article p{
+    font-size: 13px;
+}
 .white {
     color: #FFFFFF!important;
 }
@@ -982,6 +1005,7 @@ h4 {
     .bloc-lg {
         padding: 40px 0;
     }
+
     .bloc-sm,
     .bloc-md {
         padding-left: 0;
