@@ -587,7 +587,6 @@ a[data-lightbox]:hover img {
 }
 
 .close-lightbox {
-    color: #FFF;
     font-size: 30px;
     position: absolute;
     top: 20px;
@@ -597,7 +596,6 @@ a[data-lightbox]:hover img {
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
-    opacity: 0.3;
 }
 
 .close-lightbox:hover,
@@ -798,7 +796,7 @@ article p{
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
@@ -871,13 +869,13 @@ article p{
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -895,10 +893,7 @@ article p{
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -907,8 +902,7 @@ article p{
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+
     }
 }
 
@@ -960,10 +954,9 @@ article p{
     .dropdown .dropdown a .caret {
         float: none;
         margin: 5px 0 0 10px!important;
-        border: 4px solid black;
-        border-bottom-color: transparent;
-        border-right-color: transparent;
-        border-left-color: transparent;
+
+        border: transparent;
+        border-top: 4px solid black;
     }
     #hero-bloc .navbar .nav {
         background: rgba(0, 0, 0, .8);
